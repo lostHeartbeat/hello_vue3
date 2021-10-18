@@ -13,7 +13,8 @@
          <ul>
              <!--
                 当v-for与v-if一起使用时可以使用 template 
-             注意：使用 template 循环时要把:key="index"放在template 里面的标签上 -->
+             注意：使用 template 循环时要把:key="index"放在template 里面的标签上
+              -->
              <template v-for="(item,index) in list">
                  <li v-if="item.checked" :key="index">
                 <input type="checkbox" v-model="item.checked" @change="setTodolist" /> -----{{item.title}}----- <button @click="deleteData(index)">删除</button>

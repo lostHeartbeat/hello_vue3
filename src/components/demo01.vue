@@ -6,6 +6,7 @@
         <!-- 动态参数=动态属性 -->
         <a :[myHref]="'http://www.baidu.com'">跳转百度</a><br>
         <a :[myHref]="url">进入哔哩哔哩</a>
+        <div v-text="html"></div>
     </div>
 </template>
 
